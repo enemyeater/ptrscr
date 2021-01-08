@@ -40,7 +40,7 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:text-center">
               <div className="block">
-                <h2 className="bg-gray-800 text-base text-indigo-600 font-semibold tracking-wide uppercase text-5xl"><a href="https://github.com/bay0/ptrscr">PTRSCR.DEV</a></h2>
+                <h2 className="bg-gray-800 text-base text-indigo-600 font-semibold tracking-wide uppercase text-5xl"><a href="https://github.com/bay0/ptrscr">SCREENS.ENEMYEATER.XYYZ</a></h2>
               </div>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
                 Upload screenshots to GitHub gist
