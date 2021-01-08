@@ -48,8 +48,8 @@ func onReady() {
 
 	if accessToken == "" {
 		log.Println("Token doesnt exist")
-		dialog.Message("%s", "Please add your gist token").Title("PTRSCR").Info()
-		filename, err := dialog.File().Filter("Token file", "txt").Title("PTRSCR").Load()
+		dialog.Message("%s", "Please add your gist token").Title("Enemy Eater - PTRSCR").Info()
+		filename, err := dialog.File().Filter("Token file", "txt").Title("Enemy Eater - PTRSCR").Load()
 		if err != nil {
 			log.Println(err)
 		}
@@ -71,7 +71,7 @@ func onReady() {
 	tc := oauth2.NewClient(ctx, ts)
 	client := github.NewClient(tc)
 
-	imgBytes, err := utils.GetImageBytesFromURL("https://raw.githubusercontent.com/bay0/ptrscr/master/ptrscr-app/icon/icon.png")
+	imgBytes, err := utils.GetImageBytesFromURL("https://raw.githubusercontent.com/enemyeater/ptrscr/master/ptrscr-app/icon/icon.png")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -87,8 +87,8 @@ func onReady() {
 
 	//systray here
 	systray.SetTemplateIcon(icon.Data, icon.Data)
-	systray.SetTitle("PTRSCR")
-	systray.SetTooltip("PTRSCR")
+	systray.SetTitle("Enemy Eater - PTRSCR")
+	systray.SetTooltip("Enemy Eater - PTRSCR")
 	mQuitOrig := systray.AddMenuItem("Quit", "Quit the whole app")
 	go func() {
 		<-mQuitOrig.ClickedCh
@@ -171,7 +171,7 @@ func onReady() {
 
 			res, err := gist.Create(client, pngBytes, utils.BuildFileName())
 			if err == nil {
-				finalURL := "https://ptrscr.dev/?id=" + res.GetID()
+				finalURL := "https://screens.enemyeater.xyz/?id=" + res.GetID()
 
 				log.Printf("Uploaded: %s", finalURL)
 
