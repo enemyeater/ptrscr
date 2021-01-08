@@ -5,6 +5,7 @@ go 1.14
 require (
 	github.com/MakeNowJust/hotkey v0.0.0-20200628032113-41fa0caa507a
 	github.com/atotto/clipboard v0.1.2
+	github.com/cratonica/2goarray v0.0.0-20190331194516-514510793eaa // indirect
 	github.com/disintegration/imaging v1.6.2
 	github.com/getlantern/systray v1.1.0
 	github.com/google/go-github v17.0.0+incompatible

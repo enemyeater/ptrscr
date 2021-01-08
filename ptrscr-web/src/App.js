@@ -9,7 +9,6 @@ function App() {
   useEffect(() => {
     const url = new URL(window.location);
     const imgUrl = url.searchParams.get("id");
-    console.log(imgUrl)
     
     if(imgUrl !== null) {
       const requestOptions = {
@@ -47,7 +46,7 @@ function App() {
                 Upload screenshots to GitHub gist
               </p>
               <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                <a href="https://github.com/bay0/ptrscr">
+                <a href="https://github.com/enemyeater/ptrscr">
                   <button
                       type="button"
                       className={`border text-4xl border-white-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white focus:outline-none focus:shadow-outline transform hover:-translate-y-1 hover:scale-110`}
@@ -55,7 +54,7 @@ function App() {
                     Source
                   </button>
                 </a>
-                <a href="https://github.com/bay0/ptrscr/releases">
+                <a href="https://github.com/enemyeater/ptrscr/releases">
                   <button
                       type="button"
                       className={`border text-4xl border-white-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white focus:outline-none focus:shadow-outline transform hover:-translate-y-1 hover:scale-110`}
